@@ -9,7 +9,7 @@
     "lint": "eslint",
     "preview": "npm run build && serve out",
     "preview:only": "serve out",
-    "deploy": "npm run build && gh-pages -d out -t true"
+    "deploy": "npm run build && gh-pages -d out --nojekyll --cname cubedesigns.gr"
   },
   "dependencies": {
     "next": "16.1.6",
