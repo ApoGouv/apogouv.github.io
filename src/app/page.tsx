@@ -16,36 +16,45 @@ export default function Home() {
         </div>
 
         <div className="space-y-5">
-          <div className="flex flex-col items-center group">
-            {/* Main H1 */}
-            <h1 className="text-5xl md:text-8xl font-black tracking-tight flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4 px-2 relative z-10">
-              <span className="bg-gradient-to-r from-cube-orange-light via-cube-orange to-cube-orange-dark bg-clip-text text-transparent">
+          <h1 className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4 px-2 tracking-tight font-black text-5xl md:text-8xl">
+            {/* CUBE Group */}
+            <div className="flex flex-col items-center group relative">
+              <span className="bg-gradient-to-r from-cube-orange-light via-cube-orange to-cube-orange-dark bg-clip-text text-transparent z-10">
                 CUBE
               </span>
-              <span className="bg-gradient-to-r from-cube-blue-light via-cube-blue to-cube-blue-dark bg-clip-text text-transparent">
+              <span
+                aria-hidden="true"
+                className="reflection-wave select-none pointer-events-none opacity-30 group-hover:blur-[1px] scale-y-[-1] -mt-2 md:-mt-3 bg-gradient-to-r from-cube-orange-light via-cube-orange to-cube-orange-dark bg-clip-text text-transparent"
+                style={{
+                  maskImage:
+                    "linear-gradient(to bottom, transparent 20%, black 90%)",
+                  WebkitMaskImage:
+                    "linear-gradient(to bottom, transparent 20%, black 90%)",
+                }}
+              >
+                CUBE
+              </span>
+            </div>
+
+            {/* DESIGNS Group */}
+            <div className="flex flex-col items-center group relative">
+              <span className="bg-gradient-to-r from-cube-blue-light via-cube-blue to-cube-blue-dark bg-clip-text text-transparent z-10">
                 DESIGNS
               </span>
-            </h1>
-
-            {/* Mirror Reflection */}
-            <div
-              aria-hidden="true"
-              className="reflection-wave text-5xl md:text-8xl font-black tracking-tight flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4 px-2 select-none pointer-events-none opacity-30 group-hover:blur-[1px] scale-y-[-1] -mt-2 md:-mt-3"
-              style={{
-                maskImage:
-                  "linear-gradient(to bottom, transparent 20%, black 90%)",
-                WebkitMaskImage:
-                  "linear-gradient(to bottom, transparent 20%, black 90%)",
-              }}
-            >
-              <span className="bg-gradient-to-r from-cube-orange-light via-cube-orange to-cube-orange-dark bg-clip-text text-transparent">
-                CUBE
-              </span>
-              <span className="bg-gradient-to-r from-cube-blue-light via-cube-blue to-cube-blue-dark bg-clip-text text-transparent">
+              <span
+                aria-hidden="true"
+                className="reflection-wave select-none pointer-events-none opacity-30 group-hover:blur-[1px] scale-y-[-1] -mt-2 md:-mt-3 bg-gradient-to-r from-cube-blue-light via-cube-blue to-cube-blue-dark bg-clip-text text-transparent"
+                style={{
+                  maskImage:
+                    "linear-gradient(to bottom, transparent 20%, black 90%)",
+                  WebkitMaskImage:
+                    "linear-gradient(to bottom, transparent 20%, black 90%)",
+                }}
+              >
                 DESIGNS
               </span>
             </div>
-          </div>
+          </h1>
         </div>
 
         {/* Decorative Divider */}
